@@ -1,5 +1,5 @@
 # Markdown语法练习
-![](2025-03-08-19-23-48.png)
+![](https://photos.app.goo.gl/tYzrKR7646zJYdPt5)
 
 **引用**
 > This is 引用
