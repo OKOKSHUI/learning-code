@@ -1,31 +1,72 @@
-# Windows 不需要的文件
-Thumbs.db
-*.tmp
-*.bak
-*.log
+# ------------------------------
+# Visual Studio 相关文件（不需要上传）
+# ------------------------------
+.vs/                   # VS 临时目录
+*.suo                  # 解决方案用户选项
+*.user                 # 用户文件
+*.VC.db                # IntelliSense 数据库
+*.VC.opendb            # 开放数据库
+ipch/                  # 预编译头缓存
+*.aps                  # 应用程序存档
+*.ncb                  # 旧版 IntelliSense 数据
+*.cache                # 缓存文件
+*.log                  # 日志文件
 
-# Visual Studio 相关文件
-.vs/
-*.suo
-*.user
-*.VC.db
-*.VC.opendb
-
-# C/C++ 编译生成的文件
-*.exe
-*.dll
-*.obj
-*.pdb
-*.lib
-*.ilk
-*.o
-*.out
-*.a
-
-# 构建文件夹
+# ------------------------------
+# 编译输出目录（忽略所有中间文件）
+# ------------------------------
 Debug/
 Release/
 x64/
 x86/
+ARM/
+ARM64/
+build/                 # 可能的编译目录
+
+# ------------------------------
+# C/C++ 编译生成的文件（不需要上传）
+# ------------------------------
+*.obj                  # 目标文件
+*.ilk                  # 增量链接文件
+*.pch                  # 预编译头
+*.pdb                  # 程序数据库（调试用）
+*.idb                  # 最小重建数据库
+*.lib                  # 静态库
+*.exp                  # 符号导出文件
+*.tlog                 # 任务日志文件
+*.lastbuildstate       # 编译状态文件
+*.manifest             # 安全清单文件
+*.rc.res               # 资源编译文件
+
+# ------------------------------
+# 可执行文件（不需要上传）
+# ------------------------------
+*.exe                  # Windows 可执行文件
+*.dll                  # 动态链接库
+*.sys                  # 系统驱动
+*.out                  # Linux 可执行文件
+*.app                  # MacOS 可执行文件
+*.dylib                # MacOS 动态库
+*.so                   # Linux 共享库
+*.a                    # 静态库
+*.o                    # 目标文件
+
+# ------------------------------
+# CMake 相关（如果使用 CMake）
+# ------------------------------
 CMakeCache.txt
 CMakeFiles/
+CMakeScripts/
+cmake_install.cmake
+Makefile
+
+# ------------------------------
+# 其他无用文件
+# ------------------------------
+*.bak                  # 备份文件
+*.swp                  # Vim 临时文件
+*.tmp                  # 临时文件
+*.~                    # 旧版本文件
+Thumbs.db              # Windows 缩略图缓存
+Desktop.ini            # Windows 配置文件
+
