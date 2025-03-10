@@ -1,0 +1,31 @@
+# Windows 不需要的文件
+Thumbs.db
+*.tmp
+*.bak
+*.log
+
+# Visual Studio 相关文件
+.vs/
+*.suo
+*.user
+*.VC.db
+*.VC.opendb
+
+# C/C++ 编译生成的文件
+*.exe
+*.dll
+*.obj
+*.pdb
+*.lib
+*.ilk
+*.o
+*.out
+*.a
+
+# 构建文件夹
+Debug/
+Release/
+x64/
+x86/
+CMakeCache.txt
+CMakeFiles/
